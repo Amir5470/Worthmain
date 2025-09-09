@@ -9,7 +9,7 @@
 header {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    background-image: linear-gradient(to right, var(--kilbourne-blue), var(--cardinal-red));
+    background-image: linear-gradient(to right, var(--cardinal-red), var(--kilbourne-blue));
     position: relative;
     width: 100%;
     display: flex;
@@ -38,7 +38,7 @@ body {
 footer {
     font-family: 'Lato', sans-serif;
     font-weight: 400; /* Lato Regular */
-    background: linear-gradient(to right, var(--kilbourne-blue), var(--cardinal-red));
+    background: linear-gradient(to right, var(--cardinal-red), var(--kilbourne-blue));
     color: white;
     text-align: center;
     padding: 20px;      
