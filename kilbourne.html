@@ -1,190 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kilbourne High School Sports and clubs</title>
-    <link rel="stylesheet" href="thomas.css">
+    <link rel="stylesheet" href="kilbourne.css">
+    <title>Worthington Kilbourne High School</title>
+    <link rel="shortcut icon" type="image/x-icon" href="wolves.png">
+<style>
+.image-link {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;     
+    position: relative;
+    display: inline-block;
+}
+
+.image-link:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.01);
+    filter: brightness(0.5);
+}
+
+.atcl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s;
+}
+
+.image-link:hover .atcl,
+.image-link:focus .atcl {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.image-link:hover .thomas-image,
+.image-link:focus .thomas-image,
+.image-link:hover .kilbourne-image,
+.image-link:focus .kilbourne-image {
+    transform: scale(1.01);
+    filter: brightness(0.5);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+</style>
 </head>
-<!-- THIS IS TEST FOR GITHUB PAGES DO NOT REMOVE -->
 <body>
+    <!--Header-->
     <header>
-        <a href="extra.html">
-        <img src="wolves.png" alt="Worthington Kilbourne High School Logo" class="kilbourne-image"></a>
+        <a href="index.html">
+        <img src="wolves.png" alt="Worthington Kilbourne High School Logo" class="wolves"></a>
         <h1>Worthington Kilbourne High School</h1>
     </header>
-     <div class="buttons">
-    <button class="b1" id="b1" onclick="auw()">Autumn</button>
-    <button class="b1" id="b2" onclick="wiw()">Winter</button>
-    <button class="b1" id="b3" onclick="spw()">Spring</button>
-    </div>
-         <div class="content">
-        <p><br><br><br></p>
-        
-<!-- Example for all sport divs -->
-<div id="sport1" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link1">Go to Page</button>
-</div>
-<div id="sport2" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link2">Go to Page</button>
-</div>
-<div id="sport3" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link3">Go to Page</button>
-</div>
-<div id="sport4" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link4">Go to Page</button>
-</div>
-<div id="sport5" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link5">Go to Page</button>
-</div>
-<div id="sport6" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link6">Go to Page</button>
-</div>
-<div id="sport7" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link7">Go to Page</button>
-</div>
-<div id="sport8" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link8">Go to Page</button>
-</div>
-
-<div id="hidden" class="content">
-    <div id="sport9" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link9">Go to Page</button>
-</div>
-<div id="sport10" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link10">Go to Page</button>
-</div>
-<div id="sport11" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link11">Go to Page</button>
-</div>
-<div id="sport12" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link12">Go to Page</button>
-</div>
-<div id="sport13" class="example hidden">
-    <h2>‎ </h2>
-    <p>‎ </p>
-    <button id="link13">Go to Page</button>
-</div>
-</div>
-    </div>
-    <footer class="custom-footer">
-    <div class="footer-content">
-        <div class="footer-logo">
-            <a href="https://www.worthington.k12.oh.us/worthingtonkilbournehs">
-                <img src="images/wolves.png" alt="WKHS Logo" width="60">
-            </a>
-        </div>
-        <div class="footer-info">
-            <div>1499 Hard Rd, Columbus, OH 43235</div>
-            <div>Phone: <a href="tel:614.450.6400">614.450.6400</a></div>
-            <div>Email: <a href="mailto:smarshall@wscloud.org">smarshall@wscloud.org</a></div>
-        </div>
-        <div class="footer-links">
-            <a href="https://www.facebook.com/WorthingtonSchools/">Facebook</a>
-            <a href="https://www.instagram.com/worthingtonschools/">Instagram</a>
-            <a href="https://www.linkedin.com/company/worthington-schools">LinkedIn</a>
-            <a href="https://x.com/WKHSWolves">Twitter</a>
-            <a href="https://www.youtube.com/@WorthingtonSchools">YouTube</a>
-        </div>
-        <div class="footer-popular-links">
-            <a href="https://www.worthington.k12.oh.us/portal-login">Portal Login</a>
-            <a href="https://www.worthington.k12.oh.us/our-district/worthington-school-calendars">Calendars</a>
-            <a href="http://www.worthingtonschoolmenus.com/">Food Services</a>
-            <a href="https://mystop.worthington-portal.org/elinkrp/">Transportation</a>
-            <a href="https://www.worthington.k12.oh.us/staff-directorys">Staff Directory</a>
-            <a href="https://www.worthington.k12.oh.us/e-newsletter">E-Newsletter</a>
-            <a href="https://www.worthington.k12.oh.us/employment">Employment</a>
-            <a href="https://www.worthington.k12.oh.us/buy-ticketss">Buy Tickets</a>
-        </div>
-    </div>
-</footer>
-    <script>
-    const sheetId = "1kEFY3KHJW6b9SEkiEbOMtKyh0Z1NfHooQxaIyDLSZHI";
-    const apiKey = "AIzaSyDX3fxus40zemFk0vHsu8ByHCGlg4L1mC8";
-    const range = "Autumn Kilbourne!A2:D14";
-    const range2 = "Winter Kilbourne!A2:D14";
-    const range3 = "Spring Kilbourne!A2:D14";
-    const hide = document.getElementById("hidden");
-
-    // Helper to show/hide sport divs
-    function updateSports(data) {
-        for (let i = 1; i <= 13; i++) {
-            const sportDiv = document.getElementById(`sport${i}`);
-            const button = document.getElementById(`link${i}`);
-            let row = (data.values && data.values[i - 1]) || [];
-            // If row is not an array, treat as empty
-            if (!Array.isArray(row)) row = [];
-            // Check if row has at least one non-empty value
-            const hasData = row.some(cell => typeof cell === "string" && cell.trim() !== "");
-            if (hasData) {
-                const [title, details, names, links] = row;
-                sportDiv.classList.remove("hidden");
-                sportDiv.querySelector("h2").textContent = title || "";
-                sportDiv.querySelector("p").textContent = details || "";
-                button.textContent = names || "Go to Page";
-                button.onclick = () => { if (links) window.open(links); };
-            } else {
-                sportDiv.classList.add("hidden");
-                sportDiv.querySelector("h2").textContent = "";
-                sportDiv.querySelector("p").textContent = "";
-                button.textContent = "Go to Page";
-                button.onclick = null;
-            }
-        }
-    }
-
-    // Initial load (Autumn)
-    fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`)
-        .then(response => response.json())
-        .then(updateSports)
-        .catch(error => console.error("Error fetching data:", error));
-
-    function auw() {
-        hide.style.display = "flex";
-        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`)
-            .then(response => response.json())
-            .then(updateSports)
-            .catch(error => console.error("Error fetching data:", error));
-    }
-    function wiw() {
-        hide.style.display = "none";
-        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range2}?key=${apiKey}`)
-            .then(response => response.json())
-            .then(updateSports)
-            .catch(error => console.error("Error fetching data:", error));
-    }
-    function spw() {
-        hide.style.display = "none";
-        fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range3}?key=${apiKey}`)
-            .then(response => response.json())
-            .then(updateSports)
-            .catch(error => console.error("Error fetching data:", error));
-    }
-    </script>
-    
+    <!--Main Block for Sports and Clubs Images ()Holds the iamges)-->
+     <section style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 40px; margin-top: 50px;" class="images-row">
+        <!-- Separate Sports and Clubs Images -->
+        <a href="kilbourneAthletics.html">
+            <img style="border-radius: 10px; height: auto; width: 610px; margin-top: 100px;" src="KilbourneATH.jpg" class="image-link">
+            <h2 class="atcl" style="text-align: center; font-family: 'Lato', sans-serif; font-weight: 400;">Athletics</h2>
+        </a>
+        <!--Clubs Image-->
+        <a href="kilbourneClubs.html">
+            <img style="border-radius: 10px; height: auto; width: 610px; margin-top: 100px;" src="SkiClub.jpeg" class="image-link">
+            <h2 class="atcl" style="text-align: center; font-family: 'Lato', sans-serif; font-weight: 400;">Clubs</h2>
+        </a>
+    </section>
 </body>
+<!--Footer-->
+    <footer style="margin-top: 150px;">
+        <h6 style="display: flex; justify-content: center; align-items: center; height: 100px; font-family: 'Lato', sans-serif; font-weight: 400; /* Lato Regular */ background-color: var(--worthington-blue); color: #fff; text-align: center; padding: 20px;       bottom: 0; left: 0; width: 100%; margin-bottom: -9px; margin-left: -9px">&copy; 2025 Worthington Schools. All rights reserved. Made by Amir Mechkour and Owen Forloine</h6>
+    </footer>
 </html>

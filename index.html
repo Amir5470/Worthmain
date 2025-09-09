@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Worthington Schools Extracurriculars</title>
     <link rel="stylesheet" href="extracss.css">
     <link rel="stylesheet" href="fonts.css">
-        <link rel="shortcut icon" type="image/x-icon" href="/worthingtonWH.png">
-
+    <link rel="shortcut icon" type="image/x-icon" href="/worthingtonWH.png">
 </head>
 <body> 
+    <!--Header-->
     <header>
-        <img src="worthingtonWH.png" alt="Worthington Schools Logo" class="logo" href="/main.html">
-        <h1>Worthington High Schools Extracurriculars</h1>
+        <img src="worthingtonWH.png" alt="Worthington Schools Logo" class="logo" href="https://www.worthington.k12.oh.us">
+        <div id="headwrap">
+            <!--Underlined Title (DO NOT CHANGE THE CLASS) The class makes it have the green bean underline-->
+            <h1 class="underlined-text">Worthington High Schools Extracurriculars</h1>
+        </div>
     </header>
     <main>
+        <!-- School Images-->
         <div class="image-row">
             <div class="school-card">
-                <a href="Thomas.html" class="image-link">
+                <a href="thomas.html" class="image-link">
                     <img src="thomas.png" alt="Thomas Worthington High School" class="thomas-image">
                     <h2 class="school-title">Thomas Worthington High School</h2>
                 </a>
@@ -29,8 +34,22 @@
                 </a>
             </div>
         </div>
+        <!--EXTRA SPACE IS RIGHT HERE-->
+        <!-- School Stats-->
+<section id="amounts">
+    <div class="clubscount"><span class="clubnum">69</span><br>High school Clubs </div>
+    <div class="sportscount"><span class="sportnum">32</span><br>High School Sports</div>
+    <div class="star">
+        <div class="star-title">Extracurricular Stars</div>
+        <div class="star-images">
+            <img src="" alt="Star Athlete 1" class="star-athlete">
+            <img src="" alt="Star Athlete 2" class="star-athlete">
+        </div>
+    </div>
+</section>
     </main>
     <section>
+        <!--Extra Links-->
         <h3>Other Links</h3>
         <div class="links-row">
             <div class="link-item">
@@ -65,8 +84,18 @@
             </div>
         </div>
     </section>
+    <!--Footer-->
     <footer>
-        <p>&copy; 2025 Worthington Schools. All rights reserved.</p>
+        <h6>&copy; 2025 Worthington Schools. All rights reserved. Made by Amir Mechkour and Owen Forloine</h6>
     </footer>
+    <!-- Javascript so that if there are no star athletes images, a placeholder is shown -->
+<script>
+document.querySelectorAll('.star-athlete').forEach(img => {
+  const src = img.getAttribute('src');
+  if (!src || src.trim() === "") {
+    img.src = "No-athlete-image.jpg";
+  }
+});
+</script>
 </body>
 </html>
